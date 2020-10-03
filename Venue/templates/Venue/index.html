@@ -1,0 +1,534 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Clothier</title>
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Venue - Responsive HTML5 Template">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'Venue/img/favicon.png' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Web Fonts  -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,800,900" rel="stylesheet" type="text/css">
+
+    <!-- Libs CSS -->
+    <link href="{% static 'Venue/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'Venue/css/style.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'Venue/css/fontawesome.min.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'Venue/css/v-nav-menu.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'Venue/css/v-animation.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'Venue/css/v-bg-stylish.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'Venue/css/v-shortcodes.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'Venue/css/theme-responsive.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'Venue/plugins/owl-carousel/owl.theme.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'Venue/plugins/owl-carousel/owl.carousel.css' %}" rel="stylesheet" type="text/css"/>
+
+    <!-- Current Page CSS -->
+    <link href="{% static 'Venue/plugins/rs-plugin/css/settings.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'Venue/plugins/rs-plugin/css/custom-captions.css' %}" rel="stylesheet" type="text/css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'Venue/css/custom.css' %}" type="text/css">
+
+</head>
+
+<body class="no-page-top" style="background-color:#FFFFFF;" >
+
+
+
+    <!--Header-->
+    <!--Set your own background color to the header-->
+    <header data-bg-color="rgba(9, 103, 139, 0.36)" data-font-color="#fff">
+        <div class="container">
+
+            <!--Site Logo-->
+            <div class="logo" data-sticky-logo="{% static 'Venue/img/logo-white.png' %}" data-normal-logo="{% static 'Venue/img/logo.png' %}">
+                <a href="index.html">
+                    <img alt="Venue" src="{% static 'Venue/img/logo.png' %}" data-logo-height="35">
+                </a>
+            </div>
+            <!--End Site Logo-->
+
+            <div class="navbar-collapse nav-main-collapse collapse">
+
+                
+
+                <!--Main Menu-->
+			
+                <nav class="nav-main mega-menu one-page-menu">
+                    <ul class="nav nav-pills nav-main" id="mainMenu">
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="our approach.html">Our approach</a>
+                        </li>
+                        <li>
+                            <a data-hash href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="clothier.html">Clothier</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle menu-icon" href="#">Covid Care <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="covid.html">Face Masks</a></li>
+                                <li><a href="ppe.html">PPE</a></li>                                                               
+                            </ul>
+                        </li>
+                        <li>
+                            <a data-hash href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="get in touch.html">Get in touch</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--End Main Menu-->
+            </div>
+            <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <!--End Header-->
+
+    <div id="container">
+        <!-- <h1>{{ Picture}}</h1> -->
+
+        <!--Set your own slider options. Look at the v_RevolutionSlider() function in 'theme-core.js' file to see options-->
+        <div class="home-slider-wrap fullwidthbanner-container" id="home">
+            <div class="v-rev-slider" data-slider-options='{ "startheight": 875 }'>
+
+                <ul>
+
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="600">
+                        <!-- <h1>{{ Picture.Base_Picture.url }}</h1> -->
+                        <img src="{{ Picture.Base_Picture.url }}" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                          <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d9f7e7" fill-opacity="1" 
+						  d="M0,128L80,122.7C160,117,320,107,480,122.7C640,139,800,181,960,181.3C1120,181,1280,139,1360,117.3L1440,96L1440,
+						  320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+						  <text x="130" y="255" class="rr">
+							XXXX was started with the intent of making quality
+								garments manufacturing simple and accessible.</text>
+						  </svg>
+						
+						<div class="tp-caption v-caption-big-white sfl stl"
+                            data-x="290"
+                            data-y="215"
+                            data-speed="600"
+                            data-start="600"
+                            data-easing="Power1.easeInOut"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0"
+                            data-endelementdelay="0"
+                            data-endspeed="300">
+                            <center>We Develop the fashion
+							<br>brands of new age clothing</center>
+                        </div>
+						
+						<div class="tp-caption v-caption-big-white sfl stl"
+                            data-x="290"
+                            data-y="505"
+                            data-speed="600"
+                            data-start="600"
+                            data-easing="Power1.easeInOut"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0"
+                            data-endelementdelay="0"
+                            data-endspeed="300">
+                            <center>Your ideal partner to manufacture 
+							<br>custom designs & private labels.</center>							
+                        </div>
+                       
+                   </li>
+                </ul>
+            </div>
+	        </div>
+							
+							<div class="col-sm-12">
+                            <center><b><p class="v-smash-text-large-2x pull-top">
+                                <span> <br><br>Here’s what makes us your go-to person</span>
+                            </p></center></b>
+							
+							</div>
+
+            <!--Why Us-->
+			<div class="part" data-background="white">
+			
+            <div class="v-parallax" id="describe">
+                <div class="container1">
+                    <div class="row app-brief">
+               <div class="col-sm-6">
+			   <p class="v-smash-text-large-2x pull-top">
+                <div class="owl-carousel">
+              <div><div class="content_img">
+			  <img src="{{ Picture.Picture_1.Picture_1.url }}" alt="Image" class="img-rounded">
+			  <div class="v-leadbig">New Born / Infant Wear</div>
+			  </div>
+			  </div>
+              <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_2.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Kids Wear</div>
+			  </div></div>
+              <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_3.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Mens Wear</div>
+			  </div></div>
+			  <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_4.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Womens Wear</div>
+			  </div></div>
+			  <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_5.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Maternity Wear</div>
+			  </div></div>
+			  <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_6.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Plus Size</div>
+			  </div></div>
+			  
+			  <div><div class="content_img ">
+			  <img src="{{ Picture.Picture_1.Picture_1.url }}" alt="Image" class="img-rounded">
+			  <div class="v-leadbig">New Born / Infant Wear</div>
+			  </div>
+			  </div>
+              <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_2.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Kids Wear</div>
+			  </div></div>
+              <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_3.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Mens Wear</div>
+			  </div></div>
+			  <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_4.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Womens Wear</div>
+			  </div></div>
+			  <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_5.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Maternity Wear</div>
+			  </div></div>
+			  <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_6.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Plus Size</div>
+			  </div></div>
+			  
+			  <div><div class="content_img">
+			  <img src="{{ Picture.Picture_1.Picture_1.url }}" alt="Image" class="img-rounded">
+			  <div class="v-leadbig">New Born / Infant Wear</div>
+			  </div>
+			  </div>
+              <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_2.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Kids Wear</div>
+			  </div></div>
+              <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_3.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Mens Wear</div>
+			  </div></div>
+			  <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_4.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Womens Wear</div>
+			  </div></div>
+			  <div><div class="content_img"><img src="{{Picture.Picture_1.Picture_5.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Maternity Wear</div>
+			  </div></div>
+			  <div><div class="content_img"><img src="{{ Picture.Picture_1.Picture_6.url }}" alt="Image" class="img-rounded"><div class="v-leadbig">Plus Size</div>
+			  </div></div>
+			  
+              
+			  
+            </div>
+			</p>
+          </div>
+		  
+		  
+                        <div class="col-sm-6">
+                            <div class="align-centry">
+                            <p class="v-smash-text-large-2x pull-top">
+                                <span>{{ Description.Heading_1}} </span>
+                            </p>                            
+                                <p class="v-animation v-leadj" data-animation="move-up" data-delay="150">
+								<span class="v-leadj"><br>{{ Description.Description_1}}</p></span>							
+                        </div> 
+                     </div>
+                    </div>
+                </div>
+            </div>
+			</div>
+            <!--End Why Us-->
+
+            <!--Describe-->
+			<div class="part" data-background="white"></div>
+            <div class="v-parallax" id="describe">
+                <div class="container1 floatr">
+                    <div class="row app-brief">
+                        <div class="col-sm-6">
+                            <div class="align-centry1" >
+                            <p class="v-smash-text-large-2x pull-top">
+                                <span>{{Description.Heading_2}}</span>
+                            </p>
+                            
+                            <p class="v-animation v-leadj" data-animation="move-up" data-delay="150"><span class="v-leadj">
+                               
+							<br>{{ Description.Description_2}}
+
+                            </p></span>
+
+                           </div> 
+                        </div>
+
+						<div class="col-sm-6">
+						
+						<p class="v-smash-text-large-2x pull-top ">
+                            <img src="{{ Picture.Picture_2.url }}" class="img-rounded "/>
+							
+							</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+             <!--End Describe-->
+			 
+			 
+			<!--Why Us-->
+			<div class="part" data-background="white"></div>
+            <div class="v-parallax" id="describe">
+                <div class="container1">
+                    <div class="row app-brief">
+                         <div class="col-sm-6">
+						 <p class="v-smash-text-large-2x pull-top">
+                            <img src="{{ Picture.Picture_3.url }}" class="img-rounded" />
+							</p>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="align-centry">
+                            <p class="v-smash-text-large-2x pull-top">
+                                <span>{{Description.Heading_3}}</span>
+                            </p>
+                            
+                            
+                                <p class="v-animation v-leadj" data-animation="move-up" data-delay="150"><span class="v-leadj">
+								<br>{{ Description.Description_3}}</p></span>
+						</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Why Us-->
+
+			<!--Describe-->
+			<div class="part" data-background="white">
+            <div class="v-parallax" id="describe">
+                <div class="container1 floatr">
+                    <div class="row app-brief">
+                        <div class="col-sm-6">
+                            <div class="align-centry1">
+                            <p class="v-smash-text-large-2x pull-top">
+                                <span>{{Description.Heading_4}}</span>
+                            </p>
+                            <p class="v-animation v-leadj" data-animation="move-up" data-delay="150"><span class="v-leadj">
+                               <br>{{ Description.Description_4}}
+                            </p></span>
+
+                            </div>
+                        </div>
+
+                        	<div class="col-sm-6">
+							<p class="v-smash-text-large-2x pull-top">
+                            <img src="{{ Picture.Picture_4.url }}" class="img-rounded" />
+							</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			</div>
+             <!--End Describe-->
+		 
+			<!--Why Us-->
+			<div class="part" data-background="white"></div>
+            <div class="v-parallax" id="describe">
+                <div class="container1">
+                    <div class="row app-brief">
+                        <div class="col-sm-6">
+						<p class="v-smash-text-large-2x pull-top">
+                            <img src="{{ Picture.Picture_5.url }}" class="img-rounded" />
+							</p>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="align-centry">
+                            <p class="v-smash-text-large-2x pull-top">
+                                <span>{{Description.Heading_5}}</span>
+                            </p>
+                                <p class="v-animation v-leadj" data-animation="move-up" data-delay="150"><span class="v-leadj">
+								<br>{{ Description.Description_5}}
+						</p></span>
+						</div>		
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Why Us-->
+			
+			<!--Describe-->
+			<div class="part" data-background="white"></div>
+            <div class="v-parallax" id="describe">
+                <div class="container1 floatr">
+                    <div class="row app-brief">
+                        <div class="col-sm-6">
+                            <div class="align-centry1">
+                            <p class="v-smash-text-large-2x pull-top">
+                                <span>{{Description.Heading_6}}</span>
+                            </p>
+                            <p class="v-animation v-leadj" data-animation="move-up" data-delay="150"><span class="v-leadj">
+                               <br>{{ Description.Description_6}} 
+							   
+                            </p></span>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+						<p class="v-smash-text-large-2x pull-top">
+                            <img src="{{ Picture.Picture_6.url }}" class="img-rounded" />
+							</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!--End Describe-->
+
+        <!--Footer-Wrap-->
+        <div class="footer-wrap">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <section class="widget">
+                                <img alt="Venue" src="{% static 'Venue/img/logo-white.png' %}" style="height: 40px; margin-bottom: 20px;">
+                                <p class="pull-bottom-small">
+                                    Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                    per inceptos himenaeos. Nulla nunc dui, tristique in semper vel,
+                                    congue sed ligula auctor fringill torquent per conubia nostra.
+                                    Class aptent taciti sociosqu ad litora conubia nostra.
+                                </p>
+                                <p>
+                                    <a href="page-about-us-2.html">Read More →</a>
+                                </p>
+                            </section>
+                        </div>
+                        <div class="col-sm-3">
+                            <section class="widget">
+                                <div class="widget-heading">
+                                    <h4>Contact Us</h4>
+                                </div>
+                                <div class="footer-contact-info">
+                                    <ul>
+                                        <li>
+                                            <p><i class="fa fa-building"></i>Your Company </p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fa fa-map-marker"></i>1 Liberty St New York, NY 5006 </p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fa fa-envelope"></i><strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fa fa-phone"></i><strong>Phone:</strong> (123) 456-7890</p>
+                                        </li>
+                                    </ul>
+                                    <br />
+
+                                    <ul class="social-icons standard">
+                                        <li class="twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a></li>
+                                        <li class="facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a></li>
+                                        
+                                        <li class="youtube"><a href="#" target="_blank"><i class="fa fa-youtube"></i><i class="fa fa-youtube"></i></a></li>
+                                        <li class="googleplus"><a href="#" target="_blank"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+ 
+                        <div class="col-sm-3">
+                            <section class="widget">
+                                <div class="widget-heading">
+                                    <h4>Recent Works</h4>
+                                </div>
+                                <ul class="portfolio-grid">
+                                    <li>
+                                        <a href="portfolio-single.html" class="grid-img-wrap">
+                                            <img src="{% static 'Venue/img/thumbs/project-1.jpg' %}" />
+                                            <span class="tooltip">Phasellus enim libero<span class="arrow"></span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="portfolio-single.html" class="grid-img-wrap">
+                                            <img src="{% static 'Venue/img/thumbs/project-2.jpg' %}" />
+                                            <span class="tooltip">Phasellus enim libero<span class="arrow"></span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="portfolio-single.html" class="grid-img-wrap">
+                                            <img src="{% static 'Venue/img/thumbs/project-3.jpg' %}" />
+                                            <span class="tooltip">Phasellus enim<span class="arrow"></span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="portfolio-single.html" class="grid-img-wrap">
+                                            <img src="{% static 'Venue/img/thumbs/project-4.png' %}" />
+                                            <span class="tooltip">Lorem Imput<span class="arrow"></span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="portfolio-single.html" class="grid-img-wrap">
+                                            <img src="{% static 'Venue/img/thumbs/project-5.jpg' %}" />
+                                            <span class="tooltip">Phasellus Enim libero<span class="arrow"></span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="portfolio-single.html" class="grid-img-wrap">
+                                            <img src="{% static 'Venue/img/thumbs/project-6.jpg' %}" />
+                                            <span class="tooltip">Phasellus Enim<span class="arrow"></span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="copyright">
+                <div class="container">
+                    <p>© Copyright 2014 by <a href="modelweb.in">Model Web</a>. All Rights Reserved.</p>
+                    <nav class="footer-menu std-menu">
+                        <ul class="menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Our Approach</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Clothier</a></li>
+                            <li><a href="#">Covid care - masks</a></li>
+                            <li><a href="#">Blog</a></li>
+							<li><a href="#">Get in touch</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--End Footer-Wrap-->
+    </div>
+	
+	
+
+    <!--// BACK TO TOP //-->
+    <div id="back-to-top" class="animate-top"><i class="fa fa-angle-up"></i></div>
+
+    <!-- Libs -->
+    <script src="{% static 'Venue/js/jquery.min.js' %}"></script>
+    <script src="{% static 'Venue/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Venue/js/jquery.flexslider-min.js' %}"></script>
+    <script src="{% static 'Venue/js/jquery.easing.js' %}"></script>
+    <script src="{% static 'Venue/js/jquery.fitvids.js' %}"></script>
+    <script src="{% static 'Venue/js/jquery.carouFredSel.min.js' %}"></script>
+    <script src="{% static 'Venue/js/theme-plugins.js' %}"></script>
+    <script src="{% static 'Venue/js/jquery.isotope.min.js' %}"></script>
+    <script src="{% static 'Venue/js/imagesloaded.js' %}"></script>
+
+    <script src="{% static 'Venue/js/view.min.js?auto' %}"></script>
+
+    <script src="{% static 'Venue/plugins/rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'Venue/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+	<script src="{% static 'Venue/js/jquery.scrollie.min.js' %}"></script>
+    <script src="{% static 'Venue/js/script.js' %}"></script>
+
+    <script src="{% static 'Venue/js/theme-core.js' %}"></script>
+    
+</body>
+</html>
